@@ -6,6 +6,5 @@ import (
 )
 
 func main() {
-	plugin.StartProcessor(MetricRepeatFilter.MetricRepeatFilterPlugin{}, MetricRepeatFilter.Name, MetricRepeatFilter.Version)
+	plugin.StartProcessor(MetricRepeatFilter.New(), MetricRepeatFilter.Name, MetricRepeatFilter.Version)
 }
-
