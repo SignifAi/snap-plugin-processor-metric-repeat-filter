@@ -3,7 +3,6 @@ package MetricRepeatFilter
 import (
 	"strings"
 
-	log "github.com/Sirupsen/logrus"
 	"github.com/intelsdi-x/snap-plugin-lib-go/v1/plugin"
 )
 
@@ -34,16 +33,8 @@ func (mrf MetricRepeatFilterPlugin) Process(metrics []plugin.Metric, cfg plugin.
 		metricName := strings.Join(metric.Namespace.Strings(), ".")
 		oldValue, present := mrf.currentMaps[metricName]
 		if present && oldValue == metric.Data {
-			extraFields := map[string]interface{}{
-				"oldValue": oldValue,
-				"newValue": metric.Data,
-			}
 			continue
 		} else {
-			extraFields := map[string]interface{}{
-				"oldValue": oldValue,
-				"newValue": metric.Data,
-			}
 			mrf.currentMaps[metricName] = metric.Data
 			newMetrics = append(newMetrics, metric)
 		}
