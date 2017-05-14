@@ -1,18 +1,16 @@
+[![CircleCI](https://circleci.com/gh/SignifAi/snap-plugin-processor-metric-repeat-filter.svg?style=svg)](https://circleci.com/gh/SignifAi/snap-plugin-processor-metric-repeat-filter)
+
 # snap-plugin-processor-metric-repeat-filter
 Collects state metrics from your Nagios installation
-and presents them to the Snap system. 
+and presents them to the Snap system. The filter will pass to the publisher only new events and filter any duplications.
 
 1. [Getting Started](#getting-started)
   * [System Requirements](#system-requirements)
   * [Installation](#installation)
   * [Configuration and Usage](#configuration-and-usage)
-2. [Documentation](#documentation)
-  * [Examples](#examples)
-  * [Roadmap](#roadmap)
-3. [Community Support](#community-support)
-4. [Contributing](#contributing)
-5. [License](#license-and-authors)
-6. [Acknowledgements](#acknowledgements)
+2. [Contributing](#contributing)
+3. [License](#license-and-authors)
+4. [Acknowledgements](#acknowledgements)
 
 ## Getting Started
 ### System Requirements 
@@ -95,6 +93,7 @@ work with. There are no configuration settings to set.
 ```
 
 Once the task file has been created, you can create and watch the task.
+
 ```
 $ snaptel task create -t examples/tasks/nagios-status-task.yaml
 Using task manifest to create task
@@ -107,16 +106,10 @@ $ snaptel task list
 ID                                       NAME
 STATE     ...
 72869b36-def6-47c4-9db2-822f93bb9d1f
-Task-72869b36-def6-47c4-9db2-822f93bb9d1f    Running   ...
+Task-72869b36-def6-47c4-9db2-822f93bb9d1f    Running
 ```
 
-## Documentation
-
-### Roadmap
-
-## Community Support
-
-## Contributing We love contributions!
+## Contributing  - We love contributions!
 
 The most immediately helpful way you can benefit this plug-in is by cloning the repository, adding some further examples and submitting a pull request.
 
@@ -125,3 +118,4 @@ Released under under the Apache 2.0 [License](LICENSE).
 
 ## Acknowledgements
 * Author: [@SignifAi](https://github.com/SignifAi/)
+* Info: www.signifai.io
