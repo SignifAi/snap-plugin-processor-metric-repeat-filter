@@ -1,7 +1,7 @@
 version: 2
 jobs:
   build:
-    working_directory: /go/src/github.com/SignifAi/snap-plugin-publisher-signifai
+    working_directory: /go/src/github.com/SignifAi/snap-plugin-processor-metric-repeat-filter
     docker:
       - image: circleci/golang:1.8.1
     steps:
