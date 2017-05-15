@@ -41,17 +41,18 @@ repository utilizes [glide](https://github.com/Masterminds/glide) for
 library management.
 
 build:
-  ```make```
+  `make`
 
 testing:
-  ```make test```
+  `make test`
 
 ### Configuration and Usage
 * Set up the [Snap framework](https://github.com/intelsdi-x/snap/blob/master/README.md#getting-started)
 
 #### Load the Plugin
 Once the framework is up and running, you can load the plugin.
-``
+
+```
 $ snaptel plugin load snap-plugin-collector-nagios
 Plugin loaded
 Name: metric-repeat-filter
