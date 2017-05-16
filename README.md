@@ -1,9 +1,6 @@
 [![CircleCI](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](https://circleci.com/gh/SignifAi/snap-plugin-processor-metric-repeat-filter)
 [![Hex.pm](https://img.shields.io/hexpm/l/plug.svg)](https://github.com/SignifAi/snap-plugin-processor-metric-repeat-filter/blob/master/LICENSE)
 
-
-[![CircleCI](https://circleci.com/gh/SignifAi/snap-plugin-processor-metric-repeat-filter.svg?style=svg)](https://circleci.com/gh/SignifAi/snap-plugin-processor-metric-repeat-filter)
-
 # snap-plugin-processor-metric-repeat-filter
 Collects state metrics from your Nagios installation
 and presents them to the Snap system. The filter will pass to the publisher only new events and filter any duplications.
