@@ -1,3 +1,7 @@
+[![CircleCI](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](https://circleci.com/gh/SignifAi/snap-plugin-processor-metric-repeat-filter)
+[![Hex.pm](https://img.shields.io/hexpm/l/plug.svg)](https://github.com/SignifAi/snap-plugin-processor-metric-repeat-filter/blob/master/LICENSE)
+
+
 [![CircleCI](https://circleci.com/gh/SignifAi/snap-plugin-processor-metric-repeat-filter.svg?style=svg)](https://circleci.com/gh/SignifAi/snap-plugin-processor-metric-repeat-filter)
 
 # snap-plugin-processor-metric-repeat-filter
@@ -115,7 +119,7 @@ Task-72869b36-def6-47c4-9db2-822f93bb9d1f    Running
 The most immediately helpful way you can benefit this plug-in is by cloning the repository, adding some further examples and submitting a pull request.
 
 ## License
-Released under under the Apache 2.0 [License](LICENSE).
+Released under the Apache 2.0 [License](LICENSE).
 
 ## Acknowledgements
 * Author: [@SignifAi](https://github.com/SignifAi/)
