@@ -1,8 +1,9 @@
 package: .
 import:
-- package: github.com/signifai/snap-plugin-lib-go
+- package: github.com/intelsdi-x/snap-plugin-lib-go
   subpackages:
   - v1/plugin
+  repo: git@github.com:signifai/snap-plugin-lib-go
 - package: github.com/signifai/snap-plugin-processor-metric-repeat-filter
   subpackages:
   - metric-repeat-filter
