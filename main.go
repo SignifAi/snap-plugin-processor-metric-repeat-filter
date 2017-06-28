@@ -17,8 +17,9 @@ package main
 import (
 	"github.com/signifai/snap-plugin-processor-metric-repeat-filter/metric-repeat-filter"
 	"github.com/intelsdi-x/snap-plugin-lib-go/v1/plugin"
+        "google.golang.org/grpc"
 )
 
 func main() {
-	plugin.StartProcessor(MetricRepeatFilter.New(), MetricRepeatFilter.Name, MetricRepeatFilter.Version)
+	plugin.StartProcessor(MetricRepeatFilter.New(), MetricRepeatFilter.Name, MetricRepeatFilter.Version, plugin.GRPCServerOptions(grpc.MaxMsgSize(20 * 1024 * 1024)))
 }
